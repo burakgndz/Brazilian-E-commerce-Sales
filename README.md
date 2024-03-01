@@ -1,13 +1,13 @@
 # Brazilian-E-commerce-Sales
 
-Brazilian E-Commerce dataset is a public dataset provided by Olist. For more information, visit <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">the kaggle page.</a>
+Brazilian E-Commerce dataset is a public dataset provided by Olist. For more information, visit <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">the kaggle page.</a> <br> <br>
+The project’s goal is to extract overall insights and assess delivery performance. Initially, data is merged into a single file using Python, which contains all the necessary information. Basic data cleaning is performed during this step. Subsequently, additional cleaning takes place within Power BI. Finally, MSSQL is used to verify the results of the dashboard.
 
 ## Data Schema
 Here's the data schema:
 
 ![schema](https://i.imgur.com/HRhd2Y0.png)
 
-The project’s goal is to extract overall insights and assess delivery performance. Initially, data is merged into a single file using Python, which contains all the necessary information. Basic data cleaning is performed during this step. Subsequently, additional cleaning takes place within Power BI. Finally, MSSQL is used to verify the results of the dashboard.
 
 ## 1) Python / Data Cleaning & Merging
 
@@ -328,6 +328,10 @@ Here're some insights:
 <ul>
   <li> The customer base is substantial, with a total of 89,702 customers. Total sales over the three years amounted to $5.67 million, indicating a healthy revenue stream. There were 92,624 total orders placed from 2016-2018, showing consistent demand for products. The average order value is $61, and the average delivery days stand at 12 </li>
   <li> 24th November 2017 is the peak of the graph. It is highly possible that the peak in the graph was influenced by Black Friday sales.</li>
-  <li> Most of the orders (92.19%) arrived early/on time. This is consisted with seller to carrier chart, which shows 91% rate for early/on time delivery.</li>
+  <li> Credit Card is the most popular payment type, accounting for 77.07% of all transactions. Most customers prefer to pay in one installment.</li>
+  <li> The product category with the highest total orders is Electronics at 27%, closely followed by Furniture at 18%.</li>
+  <li> Furniture products have the longest average processing and shipping days, taking approximately 3.10 and 9.07 days respectively. Food & Drinks products have the shortest average processing (2.81) and shipping days (7.39).</li>
+  <li> Most of the orders (92.19%) arrived early/on time. This is consistent with seller to carrier chart (91% early/on time delivery). Average review score is 4.09, meaning customers are happy about the services. </li>
 </ul>
 
+For further work, adding an interactive map can help to understand order distribution better. 
